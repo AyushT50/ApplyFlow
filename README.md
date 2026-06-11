@@ -1,73 +1,108 @@
-# React + TypeScript + Vite
+# ApplyFlow
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ApplyFlow is an AI-powered job application automation platform designed to help job seekers manage outreach campaigns, resumes, email templates, recruiter replies, and application tracking from a single dashboard.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Resume Management
+* Email Template Builder
+* Company Database
+* Campaign Tracking
+* Reply Management
+* Dashboard Analytics
+* Dark/Light Theme
+* Responsive UI
+* Gmail Integration (Planned)
+* Google OAuth Authentication (Planned)
+* Supabase Database (Planned)
+* n8n Automation Workflows (Planned)
+* Telegram Notifications (Planned)
+* AI Resume Analysis (Planned)
+* AI Email Generation (Planned)
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Frontend
 
-## Expanding the ESLint configuration
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+* Recharts
+* Lucide React
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Planned Backend
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* FastAPI
+* Supabase
+* Gmail API
+* Google OAuth
+* n8n
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Project Structure
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+src/
+├── components/
+├── pages/
+├── services/
+├── hooks/
+├── utils/
+
+## Getting Started
+
+Install dependencies:
+
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Run development server:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+## Roadmap
+
+### Phase 1
+
+* Frontend UI
+* Dashboard
+* Campaign Management
+* Resume Upload
+* Template Management
+
+### Phase 2
+
+* Supabase Integration
+* Persistent Storage
+
+### Phase 3
+
+* Google OAuth
+
+### Phase 4
+
+* Gmail Email Sending
+
+### Phase 5
+
+* Reply Tracking with n8n
+
+### Phase 6
+
+* Telegram Notifications
+
+### Phase 7
+
+* AI Features
+
+## Author
+
+Ayush
